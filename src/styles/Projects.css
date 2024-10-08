@@ -1,0 +1,55 @@
+#projects {
+    background-color: #fff;
+    padding: 50px 20px;
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  #projects ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  #projects li {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #projects li:hover {
+    transform: scale(1.05);
+  }
+  
+  #projects h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #projects p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  #projects a {
+    font-size: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #projects a:hover {
+    text-decoration: underline;
+  }
+  
