@@ -24,7 +24,7 @@
   color: white;
   flex: 1;
   text-align: justify;
-  padding-top: 3%;
+  padding-top: 2%;
   padding-left: 5%;
   padding-right: 5%;
   font-family: "OpenSans-Regular";
@@ -33,7 +33,7 @@
 .column-right{
   color: white;
   flex: 1;
-  text-align: left;
+  text-align: right;
   align-items: center;
   font-family: "Montserrat-Black";
 }
@@ -41,4 +41,29 @@
 .column-right h1 {
   font-size: 6rem; 
   margin: 0; 
+}
+
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+    padding: 20px; 
+    padding-top: 100px; 
+    min-height: auto; 
+  }
+
+  .column-left,
+  .column-right {
+    flex: none;
+    width: 100%; 
+    text-align: center; 
+    padding: 10px 0; 
+  }
+
+  .column-right .small {
+    font-size: 3rem; 
+  }
+
+  .column-right .big {
+    font-size: 5rem; 
+  }
 }

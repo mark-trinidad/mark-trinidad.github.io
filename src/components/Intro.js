@@ -4,6 +4,12 @@ import '../styles/Intro.css';
 const Intro = () => {
   return (
     <div className="intro">
+        <div class="column-right">
+          <h1>Mark</h1>
+          <h1>Trinidad</h1>
+        </div>  
+
+      
         <div className="column-left">
           <h1>Hi.</h1>
             <p>I'm a software engineer from Manama, Bahrain, and I'm a fresh graduate excited about the world of technology. 
@@ -12,10 +18,7 @@ const Intro = () => {
               skills and knowledge further. I'm eager to contribute to innovative solutions and grow along the way! </p>
         </div>
 
-        <div class="column-right">
-          <h1>Mark</h1>
-          <h1>Trinidad</h1>
-        </div>  
+        
     </div>
   )
 }
