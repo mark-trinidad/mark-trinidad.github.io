@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('/public/fonts/OpenSans-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('/public/fonts/Montserrat-Black.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+.intro {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 200px;
+  min-height: 100vh;
+}
+
+.column-left{
+  color: white;
+  flex: 1;
+  text-align: justify;
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "OpenSans-Regular";
+}
+
+.column-right{
+  color: white;
+  flex: 1;
+  text-align: left;
+  align-items: center;
+  font-family: "Montserrat-Black";
+}
+
+.column-right h1 {
+  font-size: 6rem; 
+  margin: 0; 
+}
