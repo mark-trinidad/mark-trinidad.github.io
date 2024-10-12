@@ -1,18 +1,11 @@
-@font-face {
-  font-family: 'OpenSans-Regular'; /* Use a name for the font */
-  src: url('/public/fonts/OpenSans-Regular.ttf') format('truetype'); /* Adjust the URL as needed */
-  font-weight: normal;
-  font-style: normal;
-}
-
 .navbar {
   background-color: black;
-  font-family: 'OpenSans-Regular', sans-serif; /* Include fallback fonts */
-  font-weight: bold; /* Normal weight */
+  font-family: 'OpenSans', sans-serif;
+  font-weight: bold; 
 }
 
 .navbar-brand {
-  font-size: 20px;
+  font-size: 20;
   font-weight: bold;
   color: #ffffff !important; 
 }
@@ -42,7 +35,7 @@
 @media (max-width: 600px){
   
   .custom-toggler {
-    border-color: white; /* Change border color of the button */
+    border-color: white;
   }
   
   .custom-toggler .navbar-toggler-icon {
