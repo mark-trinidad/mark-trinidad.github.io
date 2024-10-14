@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_portfolio=self.webpackChunkmy_portfolio||[]).push([[251],{251:(e,d,s)=>{s.r(d),s.d(d,{default:()=>r});s(43);var i=s(579);const r=()=>(0,i.jsxs)("div",{id:"Credits",children:[(0,i.jsx)("p",{children:"Made and Designed by Mark Trinidad."}),(0,i.jsx)("p",{children:"All rights Reserved. \xa9"})]})}}]);
+//# sourceMappingURL=251.473d14c7.chunk.js.map
