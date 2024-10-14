@@ -1,55 +1,96 @@
 #projects {
-    background-color: #fff;
-    padding: 50px 20px;
+  margin: auto;
+  padding-top: 100px;
+  max-width: 1000px;
+  min-height: 50vh;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: bolder;
+}
+
+h1{
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0 auto; /* Ensure grid is centered */
+  padding: 20px;
+}
+
+@media (max-width: 1080px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto, minmax(250px, 1fr));
   }
-  
-  #projects h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    color: #333;
-    margin-bottom: 40px;
+}
+
+.projects-card {
+  position: relative;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem 1.75rem;
+  background-color: rgba(222, 184, 135, 0.63); /* Light background for the card */
+  border-radius: 16px;
+  transition: transform 0.2s, background-color 0.2s; /* Smooth background transition */
+}
+
+.projects-card:hover {
+  transform: translateY(-7px);
+  background-color: #282c34; /* Slightly lighter on hover */
+} 
+
+.card-header {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between;
+  padding: 1.25em 0 !important;
+}
+
+.folder-icon {
+  color: white; /* Color for the folder icon */
+}
+
+.card-title {
+  font-family: "Open-Sans", sans-serif;
+  color: white; /* Bright light color for title */
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0.5rem 0; /* Add margin for spacing */
+}
+
+.card-desc {
+  font-family: "Open-Sans", sans-serif;
+  color: #bdc3c7; /* Light gray for description */
+  font-size: 18px;
+  padding-bottom: 40px;
+  margin: 0; /* Remove margin to keep layout clean */
+}
+
+.projects-card a {
+  color: white; /* Change to the desired link color */
+  font-weight: bold; /* Make the link text bold */
+  text-decoration: none; /* Remove the underline */
+  transition: color 0.2s; /* Smooth color transition on hover */
+}
+
+.projects-card a:hover {
+  color: #dcdcdc; /* Change color on hover for better visibility */
+}
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    height: unset;
+    padding-left: unset;
+    padding-right: unset;
   }
-  
-  #projects ul {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+  .carousel {
+    display: none;
   }
-  
-  #projects li {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  #projects li:hover {
-    transform: scale(1.05);
-  }
-  
-  #projects h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  #projects p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  #projects a {
-    font-size: 1rem;
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  #projects a:hover {
-    text-decoration: underline;
-  }
-  
+}

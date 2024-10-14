@@ -1,20 +1,68 @@
-#about {
-    background-color: black;  
-    padding: 50px 20px;         
-    text-align: center;         
+.about {
+  background-color: black;  
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.column-right-abt h1 {
+  font-size: 4rem; /* Slightly smaller for better alignment */
+  font-family: "Montserrat", sans-serif;
+}
+
+.column-right-abt {
+  font-size: 2rem;
+  color: white;
+  flex: 1;
+  text-align: justify;
+  padding: 2%;
+  font-family: "OpenSans", sans-serif;
+}
+
+.column-left-abt {
+  color: white;
+  flex: 1;
+  text-align: center; /* Center-align the image */
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.column-left-abt img {
+  max-width: 100%; /* Ensures image resizes properly */
+  height: auto;
+  border-radius: 10px; /* Adds a slight border radius for aesthetics */
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+      flex-direction: column; /* Stacks text and image vertically */
+      padding: 50px;
+  }
+
+  .column-right-abt, .column-left-abt {
+      width: 100%; /* Makes both elements full width */
+      padding: 10px 0;
+      text-align: center; /* Centers both the text and image */
+  }
+
+  .column-right-abt {
+      font-size: 1.5rem; /* Reduce text size for mobile */
   }
   
-  #about h2 {
-    font-size: 2.5rem;          
-    margin-bottom: 20px;        
-    color: white;
+  .column-right-abt h1{
+    font-size: 2rem;
+    text-align: left;
   }
-  
-  #about p {
-    font-size: 1.2rem;          
-    line-height: 1.6;           
-    color: white;                
-    max-width: 800px;           
-    margin: 0 auto;             
+
+  .column-right-abt p {
+      font-size: 1.2rem; /* Slightly reduce paragraph font size */
+      line-height: 1.6; /* Increase line height for readability */
+      text-align: justify;
   }
-  
+
+  .column-left-abt img {
+      max-width: 80%; /* Slightly smaller image for mobile */
+  }
+}

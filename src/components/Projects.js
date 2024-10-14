@@ -1,25 +1,39 @@
 import React from 'react';
-import '../styles/Projects.css';
+import "../styles/Projects.css";
+import FolderIcon from '@mui/icons-material/Folder';
 
 const Projects = () => {
   const projectList = [
-    { title: 'Project 1', description: 'A cool project I worked on.', link: 'https://github.com/mark-trinidad/project1' },
-    { title: 'Project 2', description: 'Another awesome project.', link: 'https://github.com/mark-trinidad/project2' },
+    { title: 'Attendance Management System', description: 'Agile Project', link: 'https://github.com/mark-trinidad/Attendance-Management-System' },
+    { title: 'Tournament Finder', description: 'Pyautogui(Tracker) & Tkinter(GUI)  ', link: 'https://github.com/mark-trinidad/Tournament-Finder'},
   ];
 
   return (
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        {projectList.map((project, index) => (
-          <li key={index}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-          </li>
-        ))}
-      </ul>
-    </section>
+    <div id="projects">
+      <h1>PROJECTS</h1>
+      <div className="section-header">
+        <span className="section-title"></span>
+      </div>
+      <div className="project-container">
+        <ul className="projects-grid">
+          {projectList.map((project, i) => (
+            <li key={i} className="projects-card">
+              <div className="card-header">
+                <div className="folder-icon">
+                  <FolderIcon style={{ fontSize: 35 }} />
+                </div>
+                {/* Directly link to the project */}
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  View Project
+                </a>
+              </div>
+              <div className="card-title">{project.title}</div>
+              <div className="card-desc">{project.description}</div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 }
 

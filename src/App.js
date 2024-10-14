@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
-import Intro from './components/Intro';
-import About from './components/About';
-import Projects from './components/Projects';
 import './App.css';
 
+// Lazy load the components
+const Intro = lazy(() => import('./components/Intro'));
+const About = lazy(() => import('./components/About'));
+const Projects = lazy(() => import('./components/Projects'));
+const Credits = lazy(() => import('./components/Credits'));
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-        <div className='content'> 
-          <Intro/>
-          <About/>
-          <Projects/>
-        </div>
+      <Navbar />
+      <div className='content'>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Intro />
+          <About />
+          <Projects />
+          <Credits />
+        </Suspense>
+      </div>
     </div>
   );
 }

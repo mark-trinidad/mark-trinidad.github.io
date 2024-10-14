@@ -3,60 +3,100 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  padding-top: 200px;
+  padding-top: 300px;
   min-height: 100vh;
+  gap: 30px;
 }
 
-.column-left{
-  font-size: 2rem;
-  color: white;
-  flex: 1;
-  text-align: justify;
-  padding-top: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-family: "OpenSans", sans-serif;
-}
-
-.column-left h1{
-  font-size: 5rem;
-}
-
-.column-right{
+/* Fade-in effect for the name */
+.column-left {
   color: white;
   flex: 1;
   text-align: right;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+  opacity: 0;
+  transition: opacity 2s ease-in-out, transform 1s ease-in-out; /* Smooth fade-in */
 }
 
-.column-right h1 {
-  font-size: 6rem; 
-  margin: 0; 
-  
+.column-left.fade-in {
+  opacity: 1;
+  transform: translateY(-30px); /* Hover up animation */
 }
 
-@media (max-width: 600px) {
+.column-left h1 {
+  font-size: 8rem; /* Adjusted size for consistency */
+  margin: 0;
+  padding: 10px;
+}
+
+/* Right column containing the typing animation */
+.column-right {
+  font-size: 2rem;
+  color: white;
+  flex: 1;
+  text-align: justify;
+  padding: 2%;
+  font-family: "OpenSans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align text to the top */
+  padding: 10px;
+  margin: 0;
+}
+
+.intro-hi {
+  font-size: 4rem; /* Slightly smaller for better alignment */
+  font-family: "Open-sans", Sans-serif;
+  opacity: 0;
+}
+/* Fade-in and slide to left for "Hi." */
+.fade-in-left {
+  opacity: 1;
+  transform: translateX(0px); /* Start slightly to the right */
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+/* Container for the typing animation */
+.typing-container {
+  max-height: 700px; /* Set a fixed height for the text container */
+  overflow: visible; /* Ensure no overflow occurs */
+  display: flex;
+  flex-direction: column-reverse; /* Ensures the typing flows downward */
+  justify-content: flex-start; /* Text starts typing from the top */
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 600px) {
   .intro {
     flex-direction: column;
-    padding: 20px; 
-    padding-top: 100px; 
-    min-height: auto; 
+    padding: 30px;
+    padding-top: 100px;
+    min-height: auto;
   }
 
-  .column-left,
-  .column-right {
+  .column-right, .column-left {
     flex: none;
-    width: 100%; 
-    text-align: center; 
-    padding: 10px 0; 
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
   }
 
-  .column-right .small {
-    font-size: 3rem; 
+  .column-right {
+    font-size: 1.5rem; /* Reduce text size for mobile */
+    text-align: justify;
   }
 
-  .column-right .big {
-    font-size: 5rem; 
+  .column-left h1 {
+    font-size: 4rem; /* Reduce heading size for better mobile fit */
+  }
+
+  .column-right h1 {
+    font-size: 3rem; /* Smaller size for Hi. */
+  }
+
+  .column-right p {
+    font-size: 1.2rem; /* Slightly reduce paragraph font size */
+    line-height: 1.6; /* Increase line height for readability */
   }
 }

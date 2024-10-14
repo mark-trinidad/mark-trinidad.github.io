@@ -32,7 +32,7 @@
   color: burlywood !important;
 }
 
-@media (max-width: 600px){
+@media only screen and (max-width: 600px){
   
   .custom-toggler {
     border-color: white;
