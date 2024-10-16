@@ -1,36 +1,26 @@
 import React from 'react';
-import "../styles/Projects.css";
-import FolderIcon from '@mui/icons-material/Folder';
+import '../styles/Projects.css';
 
 const Projects = () => {
-  const projectList = [
-    { title: 'Attendance Management System', description: 'Agile Project', link: 'https://github.com/mark-trinidad/Attendance-Management-System' },
-    { title: 'Tournament Finder', description: 'Pyautogui(Tracker) & Tkinter(GUI)  ', link: 'https://github.com/mark-trinidad/Tournament-Finder'},
-  ];
-
   return (
-    <div id="projects">
-      <h1 className='project-title'>PROJECTS</h1>
-      <div className="section-header">
-        <span className="section-title"></span>
+    <div id='projects' className='projects'>
+      <div className="title-projects">
+        <h1>PROJECTS</h1>
       </div>
-      <div className="project-container">
-        <ul className="projects-grid">
-          {projectList.map((project, i) => (
-            <li key={i} className="projects-card">
-              <div className="card-header">
-                <div className="folder-icon">
-                  <FolderIcon style={{ fontSize: 35 }} />
-                </div>
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  View
-                </a>
-              </div>
-              <div className="card-title">{project.title}</div>
-              <div className="card-desc">{project.description}</div>
-            </li>
-          ))}
-        </ul>
+
+      <div className="flex-container">
+        <div className="item-container">
+          <div className="item">Attendance Management System</div>
+          <div className="line"></div>
+        </div>
+        <div className="item-container">
+          <div className="item">Tournament Finder</div>
+          <div className="line"></div>
+        </div>
+        <div className="item-container">
+          <div className="item">More projects</div>
+          <div className="line"></div>
+        </div>
       </div>
     </div>
   );

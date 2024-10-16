@@ -3,101 +3,93 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  padding-top: 300px;
+  padding-top: 280px; 
   min-height: 100vh;
   gap: 30px;
 }
 
-/* Fade-in effect for the name */
+.column-left, .column-right {
+  color: white;
+  flex: 1;
+  padding: 10px;
+}
+
 .column-left {
-  color: white;
-  flex: 1;
   text-align: right;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
   opacity: 0;
-  transition: opacity 2s ease-in-out, transform 1s ease-in-out; /* Smooth fade-in */
+  transform: translateY(30px);
+  transition: opacity 2s ease-in-out, transform 1s ease-in-out;
 }
 
-.column-left.fade-in {
-  opacity: 1;
-  transform: translateY(-30px); /* Hover up animation */
-}
-
-.column-left h1 {
-  font-size: 8rem; /* Adjusted size for consistency */
-  margin: 0;
-  padding: 10px;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* Right column containing the typing animation */
-.column-right {
-  font-size: 2rem;
-  color: white;
-  flex: 1;
-  text-align: justify;
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align text to the top */
-  padding: 10px;
-  padding-right: 100px;
-  margin: 0;
-}
-
-.intro-hi {
-  font-size: 4rem; /* Slightly smaller for better alignment */
-  font-family: "Open-sans", Sans-serif;
-  opacity: 0;
-}
-/* Fade-in and slide to left for "Hi." */
-.fade-in-left {
-  opacity: 1;
-  transform: translateX(0px); /* Start slightly to the right */
-  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-}
-
-/* Container for the typing animation */
-.typing-container {
-  max-height: 700px; /* Set a fixed height for the text container */
-  overflow: visible; /* Ensure no overflow occurs */
-  display: flex;
-  flex-direction: column-reverse; /* Ensures the typing flows downward */
-  justify-content: flex-start; /* Text starts typing from the top */
-}
-
-/* Mobile-specific styles */
-@media only screen and (max-width: 600px) {
-  .intro {
-    flex-direction: column;
-    padding: 30px;
-    padding-top: 100px;
-    min-height: auto;
-  }
-
-  .column-right, .column-left {
-    flex: none;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .column-right {
-    font-size: 1.5rem; /* Reduce text size for mobile */
-    text-align: justify;
+  .column-left.fade-in {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .column-left h1 {
-    font-size: 4rem; /* Reduce heading size for better mobile fit */
+    font-size: 7.7rem;
+    margin: 0;
+    padding-right: 10px 0;
+    font-family: "Montserrat", sans-serif;
   }
 
-  .column-right h1 {
-    font-size: 3rem; /* Smaller size for Hi. */
+.column-left-h2 {
+  font-size: 2rem;
+  opacity: 0;
+  padding-right: 5px;
+  font-family: "Open-Sans", sans-serif;
+  transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+  transform: translateY(40px);
+}
+  .fade-in-sub {
+    opacity: 1; 
+    transform: translateY(-5px);
+  }
+
+.column-right {
+  text-align: justify;
+  padding-right: 100px;
+  padding-top: 40px;
+}
+
+  .intro-hi {
+    font-size: 4rem;
+    opacity: 0;
+    transform: translateX(0px);
+  }
+
+  .fade-in-left {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s ease-in-out;
+  }
+  
+.typing-container {
+  overflow: visible;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  .column-left, .column-right {
+    text-align: center;
+  }
+
+  .column-left h1 {
+    font-size: 4rem;
+  }
+
+  .column-right {
+    font-size: 1.5rem;
+    padding-right: 0;
   }
 
   .column-right p {
-    font-size: 1.2rem; /* Slightly reduce paragraph font size */
-    line-height: 1.6; /* Increase line height for readability */
+    font-size: 1.2rem;
   }
 }
