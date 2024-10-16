@@ -12,42 +12,37 @@ const Intro = () => {
 
     setTimeout(() => {
       setHoverUp(true);
-       // Start fade-in for "Mark Trinidad" after 500ms
-       // Start fade-in for "Hi." after 500ms
     }, 300);
 
     setTimeout(() => {
       setFadeInHi(true);
-       // Start fade-in for "Mark Trinidad" after 500ms
-       // Start fade-in for "Hi." after 500ms
     }, 1200);
 
-    // Start typing after 2.5 seconds, allowing the fade-in effects to complete first
     setTimeout(() => {
-      setStartTyping(true); // Start typing after delay
+      setStartTyping(true);
     }, 3000);
   }, []);
 
   return (
-    <div id='' className="intro">
+    <div id='intro' className="intro">
       <div className={`column-left ${hoverUp ? 'fade-in' : ''}`}>
         <h1>Mark</h1>
         <h1>Trinidad</h1>
       </div>
 
       <div className="column-right">
-        {/* Apply fade-in-left class for the "Hi." text */}
+        
         <h1 className={`intro-hi ${fadeInHi ? 'fade-in-left' :''}`}>Hi.</h1>
-        {startTyping && ( // Only show the typing animation after delay
+        {startTyping && ( 
           <div className="typing-container">
             <TypeAnimation
               sequence={[
-                "I'm a software engineer from Manama, Bahrain, and I'm a fresh graduate excited about the world of technology. I have a passion for learning and love diving into new developments in the field. Whether it's picking up a new coding language, exploring the latest frameworks, or working on cool projects, I’m all about pushing my skills and knowledge further. I'm eager to contribute to innovative solutions and grow along the way!",
-                1000, // Waits for 1 second after finishing
+                "I'm a software engineer based in Manama, Bahrain, and a fresh graduate excited about exploring the world of technology. I have a passion for learning and love diving into new developments in the field. Whether it's picking up a new coding language, exploring the latest frameworks, or working on cool projects, I’m all about pushing my skills and knowledge further. I'm eager to contribute to innovative solutions and grow along the way!",
+                1000,
               ]}
               speed={80}
               wrapper="p"
-              repeat={0} // Repeat 0 means it will only type the text once
+              repeat={0}
               style={{ color: 'white', fontSize: '1.5rem', fontFamily: 'OpenSans, sans-serif', whiteSpace: 'pre-line' }}
             />
           </div>

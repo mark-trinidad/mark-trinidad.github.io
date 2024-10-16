@@ -10,7 +10,7 @@ const Projects = () => {
 
   return (
     <div id="projects">
-      <h1>PROJECTS</h1>
+      <h1 className='project-title'>PROJECTS</h1>
       <div className="section-header">
         <span className="section-title"></span>
       </div>
@@ -22,9 +22,8 @@ const Projects = () => {
                 <div className="folder-icon">
                   <FolderIcon style={{ fontSize: 35 }} />
                 </div>
-                {/* Directly link to the project */}
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  View Project
+                  View
                 </a>
               </div>
               <div className="card-title">{project.title}</div>

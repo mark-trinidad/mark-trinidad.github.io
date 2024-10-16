@@ -8,7 +8,7 @@ import '../styles/Navbar.css';
 
 function NavBar() {
   return (
-    <Navbar fixed='top' expand="lg" className="bg-dark navbar">
+    <Navbar fixed='top' expand="lg" className="navbar">
       <Container>
         <Navbar.Brand href="#intro">Mark Trinidad</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='custom-toggler'/>

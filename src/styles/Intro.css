@@ -28,6 +28,7 @@
   font-size: 8rem; /* Adjusted size for consistency */
   margin: 0;
   padding: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Right column containing the typing animation */
@@ -37,11 +38,11 @@
   flex: 1;
   text-align: justify;
   padding: 2%;
-  font-family: "OpenSans", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Align text to the top */
   padding: 10px;
+  padding-right: 100px;
   margin: 0;
 }
 

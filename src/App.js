@@ -2,7 +2,6 @@ import React, { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 
-// Lazy load the components
 const Intro = lazy(() => import('./components/Intro'));
 const About = lazy(() => import('./components/About'));
 const Projects = lazy(() => import('./components/Projects'));

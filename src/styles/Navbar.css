@@ -1,20 +1,20 @@
 .navbar {
   background-color: black;
   font-family: 'OpenSans', sans-serif;
-  font-weight: bold; 
 }
 
 .navbar-brand {
-  font-size: 20;
+  font-size: 2rem;
   font-weight: bold;
-  color: #ffffff !important; 
+  color: #ffffff !important;
+  display: none;
 }
 
 .nav-link {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1.5rem;
   margin-left: 15px ;
-  transition: color 0.5s ease;
+  transition: color 0.2s ease;
 }
 
 .nav-link:focus, .nav-link.active {

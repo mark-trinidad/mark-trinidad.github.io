@@ -4,12 +4,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .column-right-abt h1 {
-  font-size: 4rem; /* Slightly smaller for better alignment */
-  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-family: "Open-Sans", sans-serif;
 }
 
 .column-right-abt {
@@ -17,22 +17,22 @@
   color: white;
   flex: 1;
   text-align: justify;
-  padding: 2%;
+  padding-left: 3%;
   font-family: "OpenSans", sans-serif;
 }
 
 .column-left-abt {
   color: white;
   flex: 1;
-  text-align: center; /* Center-align the image */
+  text-align: center; 
   align-items: center;
   font-family: "Montserrat", sans-serif;
 }
 
 .column-left-abt img {
-  max-width: 100%; /* Ensures image resizes properly */
+  max-width: 100%; 
   height: auto;
-  border-radius: 10px; /* Adds a slight border radius for aesthetics */
+  border-radius: 10px; 
 }
 
 @media only screen and (max-width: 600px) {

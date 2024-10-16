@@ -1,15 +1,15 @@
 #projects {
   margin: auto;
-  padding-top: 100px;
+  padding-top: 350px;
   max-width: 1000px;
   min-height: 50vh;
   font-family: "Open-Sans", sans-serif;
   font-weight: bolder;
 }
 
-h1{
+.project-title{
   font-size: 3.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open-Sans", sans-serif;
   color: white;
 }
 
@@ -17,9 +17,9 @@ h1{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  margin: 0 auto; /* Ensure grid is centered */
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto; 
   padding: 20px;
 }
 
@@ -36,52 +36,55 @@ h1{
   flex-direction: column;
   height: 100%;
   padding: 1rem 1.75rem;
-  background-color: rgba(222, 184, 135, 0.63); /* Light background for the card */
+  background-color: rgba(222, 184, 135, 0.63); 
   border-radius: 16px;
-  transition: transform 0.2s, background-color 0.2s; /* Smooth background transition */
+  transition: transform 0.2s, background-color 0.2s; 
 }
 
 .projects-card:hover {
   transform: translateY(-7px);
-  background-color: #282c34; /* Slightly lighter on hover */
+  background-color: #282c34; 
 } 
 
 .card-header {
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: center;
   justify-content: space-between;
-  padding: 1.25em 0 !important;
+  padding: .7em 0 !important;
+  font-size: 20px;
 }
 
 .folder-icon {
-  color: white; /* Color for the folder icon */
+  color: white;
 }
 
 .card-title {
   font-family: "Open-Sans", sans-serif;
-  color: white; /* Bright light color for title */
-  font-size: 24px;
+  color: white; 
+  font-size: 35px;
   font-weight: bold;
-  margin: 0.5rem 0; /* Add margin for spacing */
+  margin: 0.5rem 0; 
+  
 }
 
 .card-desc {
   font-family: "Open-Sans", sans-serif;
-  color: #bdc3c7; /* Light gray for description */
+  color: white; 
   font-size: 18px;
   padding-bottom: 40px;
-  margin: 0; /* Remove margin to keep layout clean */
+  margin: 0;
+  font-weight: bold;
 }
 
 .projects-card a {
-  color: white; /* Change to the desired link color */
-  font-weight: bold; /* Make the link text bold */
-  text-decoration: none; /* Remove the underline */
-  transition: color 0.2s; /* Smooth color transition on hover */
+  color: white; 
+  font-weight: bold; 
+  text-decoration: none; 
+  transition: color 0.2s; 
 }
 
 .projects-card a:hover {
-  color: #dcdcdc; /* Change color on hover for better visibility */
+  color: #dcdcdc;
 }
 
 @media only screen and (max-width: 600px) {
