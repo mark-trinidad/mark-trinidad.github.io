@@ -3,8 +3,8 @@
   padding: 50px;
   padding-top: 120px;
   display: flex;
-  flex-direction: column;         
-  align-items: flex-start;       
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .title-projects h1 {
@@ -12,34 +12,62 @@
   color: white;
   font-family: "OpenSans", sans-serif;
   text-align: left;
-  margin-left: 80px;            
+  margin-left: 80px;
 }
 
 .flex-container {
-  display: flex;                  
-  flex-direction: row;          
-  align-items: center;        
-  justify-content: right;      
-  width: 100%;                   
-  padding-right: 50px;
-  margin-top: 20px;              
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 100px;
+  padding-left: 80px; 
 }
 
 .item-container {
-  margin-left: 50px;             
-  margin-bottom: 20px;            
-}
-
-.item {
-  padding: 10px;               
-  font-size: 1.5rem;            
-  color: white;              
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .line {
-  border: none;                   
-  border-top: 2px solid white;    
-  width: 10rem;             
-  margin-top: 0px;               
-  text-align: right;
+  border: none;
+  border-top: 2px solid white;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.item {
+  font-size: 2rem;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.p-projects{
+  font-size: 20px;
+  font-family: "Open-Sans", sans-serif;
+  color: white;
+  text-align: justify;
+  padding-right: 50px;
+}
+
+.icons-container{
+  display: flex;
+  text-align: left;
+  gap: 10px;
+}
+
+.MuiSvgIcon-root {
+  color: white;
+  font-size: 35px;
+  transition: color 0.2s ease;
+  cursor: pointer; 
+}
+
+.MuiSvgIcon-root:hover {
+  color: burlywood !important;
 }
