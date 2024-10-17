@@ -71,3 +71,31 @@
 .MuiSvgIcon-root:hover {
   color: burlywood !important;
 }
+
+/* Media Query for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+  .title-projects h1 {
+    font-size: 2.5rem; /* Adjust title font size for smaller screens */
+    margin-left: 20px; /* Adjust left margin */
+  }
+
+  .flex-container {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    padding-left: 20px; /* Reduce padding */
+    padding-top: 50px;  /* Reduce top padding */
+  }
+
+  .item {
+    font-size: 1.5rem; /* Adjust item font size */
+    padding-bottom: 5px; /* Reduce padding below item title */
+  }
+
+  .p-projects {
+    font-size: 16px; /* Adjust paragraph font size */
+    padding-right: 20px; /* Reduce padding for better fit */
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 25px; /* Reduce icon size */
+  }
+}

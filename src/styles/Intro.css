@@ -77,7 +77,13 @@
   }
 
   .column-left, .column-right {
-    text-align: center;
+    text-align: justify;
+  }
+
+  .typing-container {
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
   }
 
   .column-left h1 {
@@ -90,6 +96,6 @@
   }
 
   .column-right p {
-    font-size: 1.2rem;
+    font-size: .5rem;
   }
 }

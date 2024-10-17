@@ -51,7 +51,7 @@
   .column-right-abt, .column-left-abt {
       width: 100%; 
       padding: 10px 0;
-      text-align: center; 
+      text-align: justify; 
   }
 
   .column-right-abt {
@@ -70,6 +70,6 @@
   }
 
   .column-left-abt img {
-      max-width: 80%;
+      display: none;
   }
 }
