@@ -45,7 +45,7 @@
 @media only screen and (max-width: 600px) {
   .about {
       flex-direction: column;
-      padding: 50px;
+      padding: 35px;
   }
 
   .column-right-abt, .column-left-abt {
@@ -71,5 +71,9 @@
 
   .column-left-abt img {
       display: none;
+  }
+
+  .skills-list{
+    font-size: 1.2rem;
   }
 }

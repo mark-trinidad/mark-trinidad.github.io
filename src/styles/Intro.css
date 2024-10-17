@@ -52,6 +52,10 @@
   padding-top: 40px;
 }
 
+.column-right p{
+  font-size: 1.5rem;
+}
+
   .intro-hi {
     font-size: 4rem;
     opacity: 0;
@@ -79,23 +83,25 @@
   .column-left, .column-right {
     text-align: justify;
   }
-
-  .typing-container {
-    overflow: visible;
-    display: flex;
-    flex-direction: column;
-  }
-
+  
   .column-left h1 {
     font-size: 4rem;
+    text-align: center;
+  }
+
+  .column-left-h2{
+    text-align: center;
   }
 
   .column-right {
-    font-size: 1.5rem;
-    padding-right: 0;
+    padding: 16px;
+  }
+
+  .intro-hi{
+    font-size: 3rem;
   }
 
   .column-right p {
-    font-size: .5rem;
+    font-size: 1.2rem;
   }
 }

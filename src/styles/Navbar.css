@@ -7,13 +7,12 @@
   font-size: 2rem;
   font-weight: bold;
   color: #ffffff !important;
-  display: none;
 }
 
 .nav-link {
   color: #ffffff;
   font-size: 1.5rem;
-  margin-left: 15px ;
+  margin-left: 15px;
   transition: color 0.2s ease;
 }
 
@@ -28,18 +27,26 @@
 }
 
 .MuiSvgIcon-root .MuiSvgIcon-root:hover {
-  color: #ffffff !important;
   color: burlywood !important;
 }
 
-@media only screen and (max-width: 600px){
-  
-  .custom-toggler {
-    border-color: white;
+/* Hide navigation links and brand on mobile */
+@media only screen and (max-width: 600px) {
+  .navbar-brand,
+  .me-auto {
+    display: none;
   }
-  
-  .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+
+  .navbar .ml-auto {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
   }
-  
+}
+
+/* Show navigation links on desktop */
+@media only screen and (min-width: 601px) {
+  .me-auto {
+    display: flex !important;
+  }
 }

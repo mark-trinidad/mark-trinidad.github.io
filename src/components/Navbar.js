@@ -10,8 +10,6 @@ function NavBar() {
   return (
     <Navbar fixed='top' expand="lg" className="navbar">
       <Container>
-        <Navbar.Brand href="#intro">Mark Trinidad</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className='custom-toggler'/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#intro">Home</Nav.Link>
@@ -20,13 +18,13 @@ function NavBar() {
           </Nav>
           <Nav className='ml-auto'>
             <Nav.Link href="mailto:marktrinidad.works@outlook.com">
-              <EmailRoundedIcon className="MuiSvgIcon-root" style={{ fontSize: 25}} />
+              <EmailRoundedIcon className="MuiSvgIcon-root" style={{ fontSize: 27}} />
             </Nav.Link>
             <Nav.Link href="https://github.com/mark-trinidad" target="_blank">
-              <GitHubIcon className="MuiSvgIcon-root" style={{ fontSize: 24}} />
+              <GitHubIcon className="MuiSvgIcon-root" style={{ fontSize: 26}} />
             </Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/mark-trinidad-work/" target="_blank">
-              <LinkedInIcon className="MuiSvgIcon-root" style={{ fontSize: 26}} />
+              <LinkedInIcon className="MuiSvgIcon-root" style={{ fontSize: 28}} />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

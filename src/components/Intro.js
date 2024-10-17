@@ -7,7 +7,7 @@ const Intro = () => {
     hoverUp: false,
     startTyping: false,
     fadeInHi: false,
-    fadeInSubText: false, // New state for subtext
+    fadeInSubText: false,
   });
 
   useEffect(() => {
@@ -42,7 +42,6 @@ const Intro = () => {
               repeat={0}
               style={{
                 color: 'white',
-                fontSize: '1.5rem',
                 fontFamily: 'OpenSans, sans-serif',
                 whiteSpace: 'pre-line',
               }}
