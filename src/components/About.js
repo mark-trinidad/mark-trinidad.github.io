@@ -39,7 +39,7 @@ const About = () => {
     
       <div className="column-left-abt">
         <FadeUp delay="0.3s">
-        <img src='/assets/me2.jpeg' alt='mark' width={500}></img>
+        <img src='/assets/me2.jpeg' alt='mark' width={500} draggable='false'></img>
         </FadeUp>
       </div>  
         

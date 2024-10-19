@@ -61,14 +61,13 @@
   gap: 10px;
 }
 
-.MuiSvgIcon-root {
+.MuiSvgIcon-root-pr {
   color: white;
   font-size: 35px;
-  transition: color 0.2s ease;
   cursor: pointer; 
 }
 
-.MuiSvgIcon-root:hover {
+.MuiSvgIcon-root-pr:hover {
   color: burlywood !important;
 }
 

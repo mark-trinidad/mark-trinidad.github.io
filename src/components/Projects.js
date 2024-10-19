@@ -23,11 +23,11 @@ const Projects = () => {
             </p>
             <div className='icons-container'>
               <GitHubIcon
-                className="MuiSvgIcon-root"
+                className="MuiSvgIcon-root-pr"
                 onClick={() => window.open('https://github.com/mark-trinidad/Deep-Reinforcement-Learning-to-Walk', '_blank')}
               />
               <LaunchIcon
-                className="MuiSvgIcon-root"
+                className="MuiSvgIcon-root-pr"
                 onClick={() => window.open('https://marktrinidad.itch.io/deep-reinforcement-learning-to-walk', '_blank')}
               />
             </div>
@@ -43,7 +43,7 @@ const Projects = () => {
           </p>
           <div className='icons-container'>
             <GitHubIcon
-              className="MuiSvgIcon-root"
+              className="MuiSvgIcon-root-pr"
               onClick={() => window.open('https://github.com/mark-trinidad/Attendance-Management-System', '_blank')}
             />
           </div>
@@ -57,7 +57,7 @@ const Projects = () => {
           </p>
           <div className='icons-container'>
             <GitHubIcon
-              className="MuiSvgIcon-root"
+              className="MuiSvgIcon-root-pr"
               onClick={() => window.open('https://github.com/mark-trinidad/Tournament-Finder', '_blank')}
             />
           </div>
