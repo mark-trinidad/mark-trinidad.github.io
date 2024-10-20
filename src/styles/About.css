@@ -1,5 +1,5 @@
 .about {
-  background-color: black;  
+  background-color: transparent;  
   padding: 50px;
   padding-top: 150px;
   display: flex;
@@ -45,12 +45,12 @@
 @media only screen and (max-width: 600px) {
   .about {
       flex-direction: column;
-      padding: 35px;
+      padding: 10px;
   }
 
   .column-right-abt, .column-left-abt {
       width: 100%; 
-      padding: 10px 0;
+      padding: 10px;
       text-align: justify; 
   }
 

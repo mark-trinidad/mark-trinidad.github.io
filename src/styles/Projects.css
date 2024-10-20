@@ -1,6 +1,6 @@
 .projects {
-  background-color: black;  
-  padding: 50px;
+  background-color: transparent;  
+  padding: 20px;
   padding-top: 150px;
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@
 @media only screen and (max-width: 600px) {
 
   .projects{
-    padding: 35px;
+    padding: 20px;
   }
 
   .title-projects h1 {

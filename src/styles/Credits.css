@@ -1,9 +1,10 @@
 #Credits{
-    background-color: black;
+    background-color: transparent;
     color: white;
     padding: 50px;
     margin: 0;
+    font-size: 12px;
     align-items: center;
     font-family: "Open-Sans", sans-serif;
-    line-height: 13x;
+    line-height: 2px;
 }

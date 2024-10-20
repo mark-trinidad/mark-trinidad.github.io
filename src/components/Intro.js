@@ -27,6 +27,7 @@ const Intro = () => {
         <h2 className={`column-left-h2 ${animationState.fadeInSubText ? 'fade-in-sub' : ''}`}>
           Software Engineer
         </h2>
+        
       </div>
       <div className="column-right">
         <h1 className={`intro-hi ${animationState.fadeInHi ? 'fade-in-left' : ''}`}>Hi.</h1>

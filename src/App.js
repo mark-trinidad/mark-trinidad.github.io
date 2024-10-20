@@ -11,14 +11,22 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className='content'>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Intro />
-          <About />
-          <Projects />
-          <Credits />
-        </Suspense>
-      </div>
+      <video 
+        className="video-background" 
+        src='/assets/bg.mp4' 
+        autoPlay 
+        loop 
+        muted 
+        playsInline
+      ></video>
+        <div className='content'>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Intro />
+            <About />
+            <Projects />
+            <Credits />
+          </Suspense>
+        </div>
     </div>
   );
 }
