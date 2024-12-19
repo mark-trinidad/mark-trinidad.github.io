@@ -1,5 +1,5 @@
-import React from 'react'
-import "../styles/Credits.css"
+import React from 'react';
+import "../styles/Credits.css";
 
 const Credits = () => {
   return (
@@ -10,4 +10,4 @@ const Credits = () => {
   )
 }
 
-export default Credits
+export default Credits;

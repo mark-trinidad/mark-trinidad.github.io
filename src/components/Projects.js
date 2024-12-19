@@ -52,14 +52,18 @@ const Projects = () => {
         <div className="item-container">
          <FadeUp delay="0.8s">
           <div className="line"></div>
-          <div className="item">Tournament Finder</div>
-          <p className='p-projects'>I created a automated script for joining all tournaments in repeat.gg using pyautogui and tkinter(GUI)<br/>
+          <div className="item">React Practice Website</div>
+          <p className='p-projects'>A personal collection of React projects created for practice, showcasing various features and concepts such as state management, component architecture, routing, and API integration, all built to improve skills and explore React's capabilities.<br/>
           </p>
           <div className='icons-container'>
             <GitHubIcon
               className="MuiSvgIcon-root-pr"
               onClick={() => window.open('https://github.com/mark-trinidad/Tournament-Finder', '_blank')}
             />
+            <LaunchIcon
+                className="MuiSvgIcon-root-pr"
+                onClick={() => window.open('https://mark-trinidad.github.io/React_Practice', '_blank')}
+              />
           </div>
           </FadeUp>
         </div>
