@@ -58,7 +58,7 @@ const Projects = () => {
           <div className='icons-container'>
             <GitHubIcon
               className="MuiSvgIcon-root-pr"
-              onClick={() => window.open('https://github.com/mark-trinidad/Tournament-Finder', '_blank')}
+              onClick={() => window.open('https://github.com/mark-trinidad/React_Practice', '_blank')}
             />
             <LaunchIcon
                 className="MuiSvgIcon-root-pr"
